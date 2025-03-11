@@ -1,0 +1,60 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: hidden;
+    color: black;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+.fruit_holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.fruit_holder img {
+    height: 200px;
+}
+
+.fruit_name {
+    width: 100%;
+    background: #a8a8a8;
+    text-align: center;
+    font-weight: bold;
+    font-size: .7rem;
+  }
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
+.add {
+    position: absolute;
+    transform-origin: center;
+    top: .5rem;
+    right: .5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.add:hover {
+    transform: scale(1.5);
+}
+

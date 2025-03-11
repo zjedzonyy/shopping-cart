@@ -1,0 +1,29 @@
+import Navbar from "./Navbar"
+import Card from "./Card"
+import classes from '../styles/Shop.module.css'
+import fetchProductsWithErrorHandling from "./test"
+
+
+export default function Shop() {
+    const url = "https://fakestoreapi.com/products";
+    const { products, error, loading } = fetchProductsWithErrorHandling(url);
+
+    
+    if (loading) return <p>Loading</p>
+    if (error) return <p>A network error was encountered</p>
+    console.log(products);
+
+    return (
+        <div className={classes.wrapper}>
+            {products.map(item => (
+                <Card 
+                key={item.id}
+                id={item.id}
+                title={item.title} 
+                price={item.price}
+                url={item.image}
+                />
+            ))}
+        </div>
+    )
+}
