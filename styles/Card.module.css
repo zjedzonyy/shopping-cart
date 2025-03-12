@@ -7,6 +7,7 @@
     background-color: rgb(255, 255, 255);
     border-radius: 8px;
     padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
     overflow: hidden;
     color: black;
@@ -17,7 +18,7 @@
 .card:hover {
     cursor: pointer;
     transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   }
 
 .fruit_holder {
@@ -34,7 +35,6 @@
 
 .fruit_name {
     width: 100%;
-    background: #a8a8a8;
     text-align: center;
     font-weight: bold;
     font-size: .7rem;
@@ -42,7 +42,7 @@
 
 p {
     padding: 0;
-    margin: 0;
+    margin: .2rem;
 }
 
 
@@ -56,5 +56,11 @@ p {
 
 .add:hover {
     transform: scale(1.5);
+}
+
+input {
+    font-size: .75rem;
+    width: 10%;
+    margin: 0;
 }
 

@@ -1,12 +1,13 @@
 import Navbar from "./Navbar"
 import Card from "./Card"
 import classes from '../styles/Shop.module.css'
-import fetchProductsWithErrorHandling from "./test"
+import { GlobalContext } from './App';
+import { useContext } from "react";
 
 
 export default function Shop() {
     const url = "https://fakestoreapi.com/products";
-    const { products, error, loading } = fetchProductsWithErrorHandling(url);
+    const { products, error, loading } = useContext(GlobalContext);
 
     
     if (loading) return <p>Loading</p>

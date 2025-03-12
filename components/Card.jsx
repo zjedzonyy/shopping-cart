@@ -18,13 +18,14 @@ export default function Card({ title, price, url, id }) {
             </div>
             {cart.find(innerArray => innerArray[0] === id) && (
                 <input 
+                min={1}
                 type="number" 
                 value={cart.find(item => item[0] === id)?.[1]} 
                 onChange={(e) => changeQuantity(id, parseInt(e.target.value, 10))}
                 />
             ) }
             <div className={classes.fruit_holder}>
-                <img src={url} />
+                <img src={url} alt=''/>
             </div>
             <div className={classes.fruit_name}>
                 <p>${price}</p>

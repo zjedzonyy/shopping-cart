@@ -1,0 +1,30 @@
+img {
+    background: linear-gradient(
+        90deg,
+        #22c1c3 0%,
+        #fdbb2d 100%
+      );
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100;
+}
+
+.photo {
+    width: 1000px;
+}
+
+.photo img {
+    width: 500px;
+    height: 300px
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

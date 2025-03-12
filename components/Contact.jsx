@@ -3,7 +3,7 @@
 export default function Contact() {
     return (
         <>
-        MAIN ale to DANE KONTAKTOWE
+        Currently in development...
         </>
     )
 }

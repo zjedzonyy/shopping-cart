@@ -1,22 +1,38 @@
 import classes from '../styles/Navbar.module.css'
 import { Link } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { GlobalContext } from './App';
+import { IoLogoPython } from "react-icons/io5";
+import { FaShoppingCart } from "react-icons/fa";
 
 export default function Navbar() {
+    const { cart } = useContext(GlobalContext);
+    
     return (
         <header>
             <div className={classes.wrapper}>
                 <div className="logo">
-                    SHOP LOGO
+                    <IoLogoPython size={64} color='white'/>
                 </div>
                 <nav>
-                    <Link to='/homepage'>Homepage</Link>
-                    <Link to='/shop'>Shop</Link>
-                    <Link to='/contact'>Contact</Link>
+                    <div className={classes.tab}>
+                        <Link to='/homepage'>Homepage</Link>
+                    </div>
+                    <div className={classes.tab}>
+                        <Link to='/shop'>Shop</Link>
+                    </div>
+                    <div className={classes.tab}>
+                        <Link to='/contact'>Contact</Link>
+                    </div>
+
                 </nav>
                 <div className={classes.shopping}>
-                    <div className="cart">cart</div>
+                    <div className={classes.cart}>
+                        {cart.length}
+                        <FaShoppingCart size={24}/>
+                    </div>
                     <Link to='/checkout'>Checkout</Link>
-                    <div className="login">login</div>
+                    <div className="login">Login</div>
                 </div>
             </div>
         </header>
