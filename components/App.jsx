@@ -20,8 +20,6 @@ export default function App() {
 
             return [...prevData, [id, quantity]];
         });
-        console.log(cart);
-
     }
 
     const changeQuantity = (id, quantity) => {
@@ -58,7 +56,11 @@ export default function App() {
                     <Outlet/>
                 </main>
                 <footer>
-                    I am footer
+                    <p>Copyright © 2025 artutom</p>
+                    <a
+                    className={classes.github}
+                    href="https://github.com/zjedzonyy"
+                    ></a>
                 </footer>
             </div>
         </GlobalContext.Provider>

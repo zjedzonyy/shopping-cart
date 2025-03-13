@@ -26,7 +26,7 @@ export default function Checkout() {
             return cart.map(item => {
                 if (product.id === item[0]) {
                     return (
-                        <div className={classes.item} key={item[0]}>
+                        <div className={classes.item} key={item[0]} data-testid={`item-${item[0]}`}>
                             <div className={classes.photo}>
                                 <img src={product.image} alt="" />
                             </div>

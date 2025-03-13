@@ -36,7 +36,7 @@ main {
 }
 
 
-img {
+.item img {
     height: 200px;
     width: 200px;
     background-color: rgb(255, 255, 255);
@@ -99,9 +99,48 @@ img {
 .summary button {
     width: 100%;
     margin-top: 1rem;
-    transition: transform 0.2s, background-color 0.2s;
+    transition: transform 0.4s, background-color 0.4s;
+    border: var(--checkout-border);
+
 }
 
 .summary button:hover {
     background-color: rgb(4, 182, 63);
+}
+
+
+@media (max-width: 950px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .order {
+        max-width: 100%;
+    }
+
+    .summary_wrapper {
+        width: 100%;
+    }
+
+    .summary {
+        margin: 1rem;
+        padding: 1rem;
+    }
+  
+  }
+  
+  @media (max-width: 500px) {
+
+    .product_info {
+        margin: 0;
+    }
+    .order_details {
+        margin-left: 0;
+        align-items: center;
+  }
+    .delete {
+        margin: 0;
+    }
 }

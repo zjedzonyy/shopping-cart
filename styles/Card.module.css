@@ -22,6 +22,7 @@
   }
 
 .fruit_holder {
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,12 +56,17 @@ p {
 }
 
 .add:hover {
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 
 input {
-    font-size: .75rem;
-    width: 10%;
+    font-size: 0.75rem;
     margin: 0;
+    width: 10%;
+}
+
+.card input {
+    position: absolute;
+    top: .6rem
 }
 

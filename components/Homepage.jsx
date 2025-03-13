@@ -13,16 +13,6 @@ export default function Homepage() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla cum repudiandae et magni ea, quibusdam illum quam aut placeat, iure impedit quae quisquam a voluptatibus harum praesentium vitae mollitia!
             </div>
         </section>
-        <section>
-        <div className={classes.about}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nulla cum repudiandae et magni ea, quibusdam illum quam aut placeat, iure impedit quae quisquam a voluptatibus harum praesentium vitae mollitia!
-            </div>
-            <div className={classes.photo}>
-                <img src="../src/assets/home.jpg" alt="" />
-            </div>
-
-        </section>
-
         </div>
     )
 }

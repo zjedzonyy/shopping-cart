@@ -6,7 +6,6 @@ import { useContext } from "react";
 
 
 export default function Shop() {
-    const url = "https://fakestoreapi.com/products";
     const { products, error, loading } = useContext(GlobalContext);
 
     

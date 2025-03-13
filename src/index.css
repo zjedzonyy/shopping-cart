@@ -12,16 +12,31 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  --primary: #5E3B76; /* Fioletowy (akcenty, CTA) */
+  --secondary: #9E72B0; /* Lawendowy (hover, subtelne detale) */
+  --background: #F6F5FA; /* Jasne tło */
+  --card-bg: #FFFFFF; /* Tło kart */
+  --text-primary: #2D2D2D; /* Główne napisy */
+  --text-secondary: #7C7C7C; /* Dodatkowe info, placeholdery */
+  --success: #4CAF50; /* Zielony (checkout, sukces) */
+  --danger: #E63946; /* Czerwony (błędy, usuwanie z koszyka) */
+
+  --text-hover: #FFD166;
+
+  --gradient-primary: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  --gradient-secondary: linear-gradient(90deg, #ac94b1 0%, #bd71a0 100%);
+
+  --main-background: linear-gradient(90deg, #532572 0%, #e88fb7 100%);
+
+  --button-bg: var(--primary);
+  --button-hover: var(--secondary);
+  --checkout-bg: var(--background);
+  --checkout-border: var(--secondary);
+  --footer-bg: var(--primary);
+  --footer-text: white;
+
 }
-a:hover {
-  color: #535bf2;
-} */
 
 html {
   height: 100%;
@@ -48,13 +63,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background: var(--button-bg);
+  color: white;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  background: var(--button-hover);
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -76,9 +93,5 @@ button:focus-visible {
 #root {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(
-    90deg,
-    #22c1c3 0%,
-    #fdbb2d 100%
-  );
 }
+
